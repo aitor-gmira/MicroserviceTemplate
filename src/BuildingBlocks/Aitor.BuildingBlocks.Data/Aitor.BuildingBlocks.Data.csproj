@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Dapper\Connection\DefaultConnectionProvider.cs~RF13b94557.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MediatR\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aitor.BuildingBlocks.Dom\Aitor.BuildingBlocks.Dom.csproj" />
+  </ItemGroup>
+
+</Project>

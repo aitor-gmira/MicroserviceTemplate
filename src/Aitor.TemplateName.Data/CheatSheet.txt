@@ -1,0 +1,16 @@
+﻿Add-Migration -Verbose -Project 'Aitor.TemplateName.Data' -StartupProject 'Aitor.TemplateName.Data' -Context AggregateNameContext
+
+Remove-Migration -Verbose -Project 'Aitor.TemplateName.Data' -StartupProject 'Aitor.TemplateName.Data' -Context AggregateNameContext
+
+Script-Migration -Project 'Aitor.TemplateName.Data' -StartupProject 'Aitor.TemplateName.Data' -Context AggregateNameContext
+
+Update-Database -Project 'Aitor.TemplateName.Data' -StartupProject 'Aitor.TemplateName.Data' -Context AggregateNameContext
+
+Update-Database 0 -Project 'Aitor.TemplateName.Data' -StartupProject 'Aitor.TemplateName.Data' -Context AggregateNameContext
+
+
+UPDATE a una migracion específica (puede significar un avance o un retroceso en BD)
+Update-Database -Project 'Aitor.TemplateName.Data' -StartupProject 'Aitor.TemplateName.Data' -Context TemplateContext -Migration 20191031101641_FirmaDigital
+
+SCRIPT desde lo que hay después de una migracion, la cual será NO INCLUIDA
+Script-Migration -Project 'Aitor.TemplateName.Data' -StartupProject 'Aitor.TemplateName.Data' -Context TemplateContext -From 20191015105609_Inicial

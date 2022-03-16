@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "aitor.garcia",
+    "classifications": [
+        "Aitor",
+        "Microservice"
+    ],
+    "identity": "Aitor.MS.Template",
+    "name": "Aitor template for Ms",
+    "shortName": "aitorMsTemplate",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "symbols": {
+        "ProjectName": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Proyect Name",
+            "fileRename": "TemplateName",
+            "replaces": "TemplateName"
+        },
+        "AggregateName": {
+            "type": "parameter",
+            "datatype": "text",
+            "description": "Aggregate Root Name",
+            "fileRename": "AggregateName",
+            "replaces": "AggregateName"
+        },
+        "AggregateNameLower": {
+            "type": "generated",
+            "generator": "casing",
+            "parameters": {
+                "source": "AggregateName",
+                "toLower": true
+            },
+            "replaces": "aggregateName"
+        },
+        "Log": {
+            "type": "parameter",
+            "datatype": "choice",
+            "defaultValue": "File",
+            "choices": [
+                {
+                    "choice": "Console",
+                    "description": "Log destination -> Console"
+                },
+                {
+                    "choice": "File",
+                    "description": "Log destination -> File(C:\\Logs\\Microservices\\TemplateName-.log)"
+                }
+            ]
+        }
+    }
+}

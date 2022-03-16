@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aitor.TemplateName.Models\Aitor.TemplateName.Models.csproj" />
+    <ProjectReference Include="..\BuildingBlocks\Aitor.BuildingBlocks.Dom\Aitor.BuildingBlocks.Dom.csproj" />
+  </ItemGroup>
+
+</Project>

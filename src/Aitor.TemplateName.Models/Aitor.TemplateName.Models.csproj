@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuildingBlocks\Aitor.BuildingBlocks.CQRS\Aitor.BuildingBlocks.CQRS.csproj" />
+    <ProjectReference Include="..\BuildingBlocks\Aitor.BuildingBlocks.Language\Aitor.BuildingBlocks.Internationalization.csproj" />
+  </ItemGroup>
+
+</Project>
